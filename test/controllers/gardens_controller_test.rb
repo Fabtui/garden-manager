@@ -42,7 +42,6 @@ class GardensControllerTest < ActionDispatch::IntegrationTest
     assert_difference('Garden.count', -1) do
       delete garden_url(@garden)
     end
-
     assert_redirected_to gardens_url
   end
 end
